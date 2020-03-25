@@ -77,6 +77,9 @@ def all_holidays_with_bbq(holiday_hash)
   holiday_hash.each do |season, holidays|
     holidays.each do |holiday, supplies|
       holiday_w_bbq << holiday.capitalize if supplies.include?("BBQ")
+    end 
+  end 
+  holiday_w_bbq
 end
 
 
